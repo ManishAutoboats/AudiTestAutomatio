@@ -19,7 +19,7 @@ public class SeleniumDemo {
 	WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
 	
 	   username.sendKeys("standard_user");
-	   Thread.sleep(3000);
+	//   Thread.sleep(3000);
 	
 WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
 
@@ -27,11 +27,11 @@ WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
 
   WebElement loginBtn= driver.findElement(By.xpath("//input[@id='login-button']"));
   
-  Thread.sleep(3000);
+
 		
 	    loginBtn.click();	
 	    
-	    driver.quit();
+	    driver.quit(); // browser quit 
 		
 		
 	}
